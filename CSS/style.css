@@ -12,7 +12,7 @@ h1{
 /* ----- FLEX-BOX ----- */
 
 .content-flex{
-    display:flex; /*Define que el contenedor sea flexible*/
+    display:flex; /*Se define que el contenedor sea flexible*/
     flex-direction: column;
     width: 500px;
     height: 300px;
