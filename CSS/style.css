@@ -9,7 +9,7 @@ h1{
     text-align: center;
 }
 
-/* ----- FLEX-BOX ----- */
+/* -----Practica con FLEX-BOX ----- */
 
 .content-flex{
     display:flex; /*Se define que el contenedor sea flexible*/
