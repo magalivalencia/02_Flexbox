@@ -1,62 +1,71 @@
-*{
-    margin:0;
-    padding:0;
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #B39DDB;
 }
 
-h1{
+/* Títulos */
+h1 {
     margin: 30px;
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
 }
 
-/* -----Practica con FLEX-BOX ----- */
-
-.content-flex{
-    display:flex; /*Se define que el contenedor sea flexible*/
-    flex-direction: column;
+/* Contenedor principal (Flexbox) */
+.content-flex {
+    display: flex; /* Define el contenedor como flexible */
+    flex-direction: row; /* Coloca los elementos en fila */
+    justify-content: space-around; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente */
     width: 500px;
     height: 300px;
-    background: #E0E0E0 ;
-    border: 3px solid #616161;
     margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
+    background: #E0E0E0;
+    border: 3px solid #616161;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
 }
 
-.contenido{
-    width: 30px;
-    height: 30px;
-    background: rgb(255, 255, 255);
+/* Elementos dentro del contenedor */
+.contenido {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%; /* Bordes redondeados en los elementos */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Efecto dinámico */
 }
 
-.contenido:nth-child(1){
+/* Estilos específicos para cada elemento */
+.contenido:nth-child(1) {
     background: #9868e0;
-   
 }
-.contenido:nth-child(2){
+.contenido:nth-child(2) {
     background: #D1C4E9;
-    align-self: flex-start;
-   
+    align-self: flex-start; /* Cambia la posición vertical */
 }
-.contenido:nth-child(3){
+.contenido:nth-child(3) {
     background: #B39DDB;
-    
 }
-.contenido:nth-child(4){
+.contenido:nth-child(4) {
     background: #9575CD;
-   
 }
-.contenido:nth-child(5){
+.contenido:nth-child(5) {
     background: #5d1ad0;
-    align-self: flex-end;
-    
+    align-self: flex-end; /* Cambia la posición vertical */
 }
-.contenido:nth-child(6){
+.contenido:nth-child(6) {
     background: #673AB7;
-    
 }
+
+/* Efectos al pasar el mouse */
+.contenido:hover {
+    transform: scale(1.2); /* Aumenta el tamaño ligeramente */
+    background-color: #7e57c2; /* Cambia el color al pasar el mouse */
+}
+
 
 /*
 @media  screen and (min-width:700px){
