@@ -16,7 +16,7 @@ h1 {
 
 /* Contenedor principal (Flexbox) */
 .content-flex {
-    display: flex; /* Define el contenedor como flexible */
+    display: flex; 
     flex-direction: row; /* Coloca los elementos en fila */
     justify-content: space-around; /* Distribuye los elementos con espacio entre ellos */
     align-items: center; /* Alinea los elementos verticalmente */
